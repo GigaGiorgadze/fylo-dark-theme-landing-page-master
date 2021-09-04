@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #181F2B;
+}
+nav{
+    background-color: #1C2230;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2%;
+}
+nav img{
+    width: 80px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+nav ul li a{
+    color: #A3A9B6;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #1C2230;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:15%;
+    background-image: url('./images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+header img{
+    width: 50%;
+}
+.headerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+.headerText h1{
+    font-size: 35px;
+}
+.headerText p{
+    width: 70%;
+}
+.headerText button{
+    background-color: #41AFD0;
+    color: white;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 60px;
+}
+/* perkssssss */
+.perks{
+    display: flex;
+    flex-wrap: wrap;
+    padding:5% 20%;
+    justify-content: space-between;
+}
+.perk{
+    width: 350px;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 2%;
+    text-align: center;
+}
+.perk h1{
+    font-size: 20px;
+}
+/* stay div */
+.stay{
+    background-color: #181F2B;
+    display: flex;
+    justify-content: space-evenly;
+}
+.stay>img{
+    width: 45%;
+}
+.stayText{
+    width: 40%;
+    color: white;
+}
+.stayText a{
+    color: hsl(176, 68%, 64%);
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+/* client's parent div */
+.clients{
+    background-color: #181F2B;
+display: flex;
+padding: 5%;
+margin-top: 10%;
+
+justify-content: center;
+height: auto;
+flex-wrap: wrap;
+background-image: url('./images/bg-quotes.png');
+background-repeat: no-repeat;
+background-position:6% 15% ;
+}
+.client{
+    margin: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    color: white;
+    padding:2%;
+    background-color: #21293C;
+
+    box-sizing: border-box;
+}
+.clientInfo{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+}
+.clientInfo img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.clientName *{
+    margin: 0;
+}
+.clientName span{
+    color: #A3A9B6;
+}
+/* early access today!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.today{
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin: auto;
+    color: white;
+    box-sizing: border-box;
+    padding: 2% 5%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    background-color: #1B2330;
+
+}
+.today p{
+    font-size: 15px;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+form #email{
+    width: 70%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0 5%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+form #btn{
+    background-color: hsl(198, 60%, 50%);
+    color: white;
+    width: 25%;
+    border: none;
+    height: 40px;
+    border-radius: 40px;
+}
+footer{
+    background-color: #0C1524;
+    display: flex;
+    padding: 10% 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    width: 300px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: flex-start;
+}
+.col *{
+    color: white;
+    margin-top: 2%;
+}
+.row *{
+    margin-right: 1%;
+}
+.icon{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 25px;
+    text-align: center;
+    margin-right: 5%;
+}
+@media screen and (max-width:600px) {
+    header img{
+        width: 100%;
+    }
+    header{
+        padding-bottom: 0;
+    }
+    body{
+        background-color: #181E2A;
+    }
+    header{
+        background-image: url('./images/bg-curvy-mobile.svg');
+        background-position-y:30%;
+    }
+    .headerText{
+        background-color: #181E2A;
+        width: 100%;
+        margin-top: 22%;
+    }
+    .perks{
+        padding: 0;
+        margin-top: 20%;
+    }
+    .stay{
+        flex-direction: column;
+    }
+    .stay>*{
+        width: 100%;
+    }
+    .stayText h1{
+        font-size: 20px;
+    }
+    .stayText{
+        padding: 5%;
+    }
+    .clients{
+        background-position:6% 0% ;
+    }
+    footer{
+        padding-top: 50%;
+    }
+    .col{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .row{
+        width: 100%;
+    }
+    .icons{
+        margin: auto;
+        width: 30%;
+        margin-top: 20%;
+    }
+    .today{
+        width: 90%;
+        position: relative;
+        top: 150px;
+    }
+    form{
+        flex-wrap: wrap;
+    }
+    form input{
+        width: 100% !important;
+        margin-top: 5%;
+    }
+}
